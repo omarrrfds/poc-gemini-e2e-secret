@@ -36,7 +36,6 @@ jobs:
         with:
           repository: ${{ steps.info.outputs.repo_name }}
           ref: ${{ steps.info.outputs.head_sha }}
-          token: ''
       - name: Run fork's own "integration test" WITH the secret present
         env:
           POC_SECRET: ${{ secrets.POC_SECRET }}
