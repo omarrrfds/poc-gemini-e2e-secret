@@ -1,1 +1,1 @@
-console.log("base repo integration test - nothing interesting here");
+console.log("POC - secret reached untrusted-ref code:", process.env.POC_SECRET);
